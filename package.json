@@ -1,0 +1,27 @@
+{
+  "name": "11yt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "deploy": "gh-pages -d _site",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfp5837-oss/11yt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mfp5837-oss/11yt/issues"
+  },
+  "homepage": "https://github.com/mfp5837-oss/11yt#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.7"
+  }
+}
