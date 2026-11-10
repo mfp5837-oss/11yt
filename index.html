@@ -12,6 +12,7 @@
            content="ie=edge">
      <title>My Page</title>
      <link rel="stylesheet" href="CSS/style.css">
+     <script type="module" src="/js/is-land.js"></script>
 </head>
 <body>
 
@@ -21,7 +22,19 @@
 <p>Welcome to my site.<br>
 This page was made with <strong>Eleventy</strong> and written in Markdown.</p>
 <p><a href="guide.html">Go to Introduction</a>
-[Go to section 2 ownership]</p>
+<a href="/three/index.html">Here is my threejs</a></p>
+<is-land on:visible>
+  <div id="counter" v-scope="{ count: 0 }">
+    <p>Count: <span v-text="count"></span></p>
+    <button @click="count++">Add one</button>
+  </div>
+  <template data-island>
+    <script type="module">
+      import { createApp } from '/js/petite-vue.es.js'
+      createApp().mount('#counter')
+    </script>
+  </template>
+</is-land>
 
     
 </body>
