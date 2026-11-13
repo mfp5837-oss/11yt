@@ -2,13 +2,15 @@
 title: Home
 layout: base.njk
 ---
+{% include "navbar.html" %}
+
 # Hello!
 ## Hey guys!
 Welcome to my site.  
 This page was made with **Eleventy** and written in Markdown.
 
 [Go to Introduction](guide.html) 
-[Here is my threejs](/three/index.html)
+[Here is my threejs](./three/index.html)
 
 <is-land on:visible>
 

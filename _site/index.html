@@ -16,13 +16,18 @@
 </head>
 <body>
 
-
-    <h1>Hello!</h1>
+    <nav class="site-nav">
+  <a href="/">Home</a>
+  <a href="/guide.html/">My Tech Guide</a>
+  <a href="./gallery/index.html">Gallery</a>
+  <a href="/contact/">Contact</a>
+</nav>
+<h1>Hello!</h1>
 <h2>Hey guys!</h2>
 <p>Welcome to my site.<br>
 This page was made with <strong>Eleventy</strong> and written in Markdown.</p>
 <p><a href="guide.html">Go to Introduction</a>
-<a href="/three/index.html">Here is my threejs</a></p>
+<a href="./three/index.html">Here is my threejs</a></p>
 <is-land on:visible>
   <div id="counter" v-scope="{ count: 0 }">
     <p>Count: <span v-text="count"></span></p>
