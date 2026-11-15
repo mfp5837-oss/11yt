@@ -19,3 +19,12 @@ h2 {
   margin-bottom: 0.75rem;
   color: #234b85;
 }
+
+.filters button.on {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.topic img {
+  max-width: 14rem;
+  margin: 0.5rem;
+}
