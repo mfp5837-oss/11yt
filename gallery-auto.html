@@ -28,6 +28,8 @@
       
       <button @click="active = 'sketches'" :class="{ on: active === 'sketches' }" :aria-pressed="active === 'sketches'">sketches</button>
       
+      <button @click="active = 'type'" :class="{ on: active === 'type' }" :aria-pressed="active === 'type'">type</button>
+      
     </div>
     <p aria-live="polite">Showing: <span v-text="active"></span></p>
     
@@ -53,8 +55,30 @@
       <div class="row">
         
         <figure>
-          <img src="img/sketches/dog.jpg" alt="dog">
+          <img src="img/sketches/dog.jpg" alt="image of a dog">
           <figcaption>dog</figcaption>
+        </figure>
+        
+        <figure>
+          <img src="img/sketches/scarlet.jpg" alt="image of a scarlet macaw">
+          <figcaption>scarlet</figcaption>
+        </figure>
+        
+      </div>
+    </section>
+    
+    <section class="topic" v-show="active === 'all' || active === 'type'">
+      <h3>type</h3>
+      <div class="row">
+        
+        <figure>
+          <img src="img/type/rtype.jpg" alt="image of the game R Type">
+          <figcaption>rtype</figcaption>
+        </figure>
+        
+        <figure>
+          <img src="img/type/space.jpg" alt="image of the game space invaders">
+          <figcaption>space</figcaption>
         </figure>
         
       </div>
