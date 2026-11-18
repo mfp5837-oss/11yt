@@ -15,7 +15,24 @@
     {
       "file": "dog.jpg",
       "caption": "dog",
-      "alt": ""
+      "alt": "image of a dog"
+    },
+    {
+      "file": "scarlet.jpg",
+      "caption": "scarlet",
+      "alt": "image of a scarlet macaw"
+    }
+  ],
+  "type": [
+    {
+      "file": "rtype.jpg",
+      "caption": "rtype",
+      "alt": "image of the game R Type"
+    },
+    {
+      "file": "space.jpg",
+      "caption": "space",
+      "alt": "image of the game space invaders"
     }
   ]
 }
