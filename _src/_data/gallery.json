@@ -1,0 +1,21 @@
+{
+  "photos": [
+    {
+      "file": "retro.jpg",
+      "caption": "retro",
+      "alt": "pic of two people playing on a retro console"
+    },
+    {
+      "file": "console.jpg",
+      "caption": "console",
+      "alt": "image of different retro consoles"
+    }
+  ],
+  "sketches": [
+    {
+      "file": "dog.jpg",
+      "caption": "dog",
+      "alt": ""
+    }
+  ]
+}
