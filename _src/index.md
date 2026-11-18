@@ -21,7 +21,7 @@ This page was made with **Eleventy** and written in Markdown.
 
   <template data-island>
     <script type="module">
-      import { createApp } from '/js/petite-vue.es.js'
+      import { createApp } from '../js/petite-vue.es.js'
       createApp().mount('#counter')
     </script>
   </template>

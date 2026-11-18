@@ -12,13 +12,13 @@
            content="ie=edge">
      <title>My Page</title>
      <link rel="stylesheet" href="CSS/style.css">
-     <script type="module" src="/js/is-land.js"></script>
+     <script type="module" src="/11ty/js/is-land.js"></script>
 </head>
 <body>
 
     <nav class="site-nav">
   <a href="/">Home</a>
-  <a href="./guide.html">My Tech Guide</a>
+  <a href="./guides.html">My Tech Guide</a>
   <a href="./gallery/index.html">Gallery</a>
   <a href="/contact/">Contact</a>
 </nav>
@@ -35,7 +35,7 @@ This page was made with <strong>Eleventy</strong> and written in Markdown.</p>
   </div>
   <template data-island>
     <script type="module">
-      import { createApp } from '/js/petite-vue.es.js'
+      import { createApp } from '../js/petite-vue.es.js'
       createApp().mount('#counter')
     </script>
   </template>
