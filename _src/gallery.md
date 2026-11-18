@@ -25,7 +25,7 @@ layout: base.njk
   <section class="topic" v-show="active === 'all' || active === 'type'">
     <h3>Games</h3>
     <img src="./img/type/rtype.jpg" alt="image of the game R Type">
-    <img src="./img/type/space.jpg" alt="image of space inavders">
+    <img src="../img/type/space.jpg" alt="image of space inavders">
   </section>
 </div>
 
