@@ -16,11 +16,11 @@ Each section should link to at least one resource and say why it's worth a reade
 
 
 <div class ="game-row">
-<img src="../img/games/nes.png" class="cover" alt="Photo">
-<img src="../img/games/n64.png" class="cover" alt="Photo">
-<img src="../img/games/gba.png" class="cover" alt="Photo">
-<img src="../img/games/nds.png" class="cover" alt="Photo">
-<img src="../img/games/wii.png" class="cover" alt="Photo">
+<img src="./img/games/nes.png" class="cover" alt="Photo">
+<img src="./img/games/n64.png" class="cover" alt="Photo">
+<img src="./img/games/gba.png" class="cover" alt="Photo">
+<img src="./img/games/nds.png" class="cover" alt="Photo">
+<img src="./img/games/wii.png" class="cover" alt="Photo">
 </div>
 
 
