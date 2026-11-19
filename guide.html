@@ -95,6 +95,26 @@ HTML (not Markdown) between them. Delete the comment marks to use it:
   
 </main>
 
-    
+<strong>Page last updated:</strong>
+
+  <time class="fmt-date" datetime="2026-11-05T15:18:35-05:00">2026-11-05T15:18:35-05:00</time>
+
+&middot;
+<strong>Site last built:</strong>
+<time class="fmt-date" datetime="2026-11-19T20:21:30.193Z">2026-11-19T20:21:30.193Z</time>
+
+<is-land on:visible>
+  <template data-island>
+    <script type="module">
+      const fmt = new Intl.DateTimeFormat(undefined, {
+        dateStyle: "medium",
+        timeStyle: "short"
+      });
+      document.querySelectorAll("time.fmt-date").forEach((el) => {
+        el.textContent = fmt.format(new Date(el.getAttribute("datetime")));
+      });
+    </script>
+  </template>
+</is-land>
 </body>
 </html>
