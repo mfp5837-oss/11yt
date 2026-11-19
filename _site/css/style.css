@@ -1,5 +1,4 @@
-body {
-  margin: 0;
+body {  margin: 0;
   padding: 2rem;
   font-family:sans-serif;
   background: #32a885;
@@ -42,3 +41,9 @@ h2 {
   width: 100%;
   margin: 0;
 }
+
+.game-row {display: flex; align-items: center; justify-content: center; gap: 5px}
+
+.cover {width: 300px;transition: opacity 0.5s ease;}
+
+.cover:hover {opacity: 0;}

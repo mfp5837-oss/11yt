@@ -12,3 +12,15 @@ Game presentationis about keeping old games, their hardware, and files alive for
 Here is a very good source that has a ton of game presentation sites on it! [Learn More Here](https://preserve.games/#browse)
 
 Each section should link to at least one resource and say why it's worth a reader's time.
+
+
+
+<div class ="game-row">
+<img src="../img/games/nes.png" class="cover" alt="Photo">
+<img src="../img/games/n64.png" class="cover" alt="Photo">
+<img src="../img/games/gba.png" class="cover" alt="Photo">
+<img src="../img/games/nds.png" class="cover" alt="Photo">
+<img src="../img/games/wii.png" class="cover" alt="Photo">
+</div>
+
+
