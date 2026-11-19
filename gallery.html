@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" 
+           content="width=device-width, 
+           user-scalable=no, 
+           initial-scale=1.0, 
+           maximum-scale=1.0, 
+           minimum-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" 
+           content="ie=edge">
+     <title>My Page</title>
+     <link rel="stylesheet" href="CSS/style.css">
+     <script type="module" src="./js/is-land.js"></script>
+</head>
+<body>
+<nav class="site-nav">
+  <a href="/">Home</a>
+  <a href="./guide.html">My Tech Guide</a>
+  <a href="./gallery.html">Gallery</a>
+  <a href="/contact/">Contact</a>
+</nav>
+    
+
+<is-land on:visible>
+  <div id="gallery" v-scope="{ active: 'all' }">
+    <div class="filters">
+      <button @click="active = 'all'" :class="{ on: active === 'all' }" :aria-pressed="active === 'all'">All</button>
+      
+      <button @click="active = 'photos'" :class="{ on: active === 'photos' }" :aria-pressed="active === 'photos'">photos (2)</button>
+      
+      <button @click="active = 'sketches'" :class="{ on: active === 'sketches' }" :aria-pressed="active === 'sketches'">sketches (2)</button>
+      
+      <button @click="active = 'type'" :class="{ on: active === 'type' }" :aria-pressed="active === 'type'">type (2)</button>
+      
+    </div>
+    <p aria-live="polite">Showing: <span v-text="active"></span></p>
+    
+    <section class="topic" v-show="active === 'all' || active === 'photos'">
+      <h3>photos</h3>
+      <div class="row">
+        
+        <figure>
+          <img src="img/photos/retro.jpg" alt="pic of two people playing on a retro console">
+          <figcaption>retro</figcaption>
+        </figure>
+        
+        <figure>
+          <img src="img/photos/console.jpg" alt="image of different retro consoles">
+          <figcaption>console</figcaption>
+        </figure>
+        
+      </div>
+    </section>
+    
+    <section class="topic" v-show="active === 'all' || active === 'sketches'">
+      <h3>sketches</h3>
+      <div class="row">
+        
+        <figure>
+          <img src="img/sketches/dog.jpg" alt="image of a dog">
+          <figcaption>dog</figcaption>
+        </figure>
+        
+        <figure>
+          <img src="img/sketches/scarlet.jpg" alt="image of a scarlet macaw">
+          <figcaption>scarlet</figcaption>
+        </figure>
+        
+      </div>
+    </section>
+    
+    <section class="topic" v-show="active === 'all' || active === 'type'">
+      <h3>type</h3>
+      <div class="row">
+        
+        <figure>
+          <img src="img/type/rtype.jpg" alt="image of the game R Type">
+          <figcaption>rtype</figcaption>
+        </figure>
+        
+        <figure>
+          <img src="img/type/space.jpg" alt="image of the game space invaders">
+          <figcaption>space</figcaption>
+        </figure>
+        
+      </div>
+    </section>
+    
+  </div>
+
+  <template data-island>
+    <script type="module">
+      import { createApp } from "./js/petite-vue.es.js"
+      createApp().mount('#gallery')
+    </script>
+  </template>
+</is-land>
+    
+</body>
+</html>

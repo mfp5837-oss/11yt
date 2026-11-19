@@ -8,7 +8,7 @@ layout: base.njk
     <div class="filters">
       <button @click="active = 'all'" :class="{ on: active === 'all' }" :aria-pressed="active === 'all'">All</button>
       {% for topic, images in gallery %}
-      <button @click="active = '{{ topic }}'" :class="{ on: active === '{{ topic }}' }" :aria-pressed="active === '{{ topic }}'">{{ topic }}</button>
+      <button @click="active = '{{ topic }}'" :class="{ on: active === '{{ topic }}' }" :aria-pressed="active === '{{ topic }}'">{{ topic }} ({{ images.length}})</button>
       {% endfor %}
     </div>
     <p aria-live="polite">Showing: <span v-text="active"></span></p>
@@ -29,7 +29,7 @@ layout: base.njk
 
   <template data-island>
     <script type="module">
-      import { createApp } from '{{ "/js/petite-vue.es.js" | url }}'
+      import { createApp } from "./js/petite-vue.es.js"
       createApp().mount('#gallery')
     </script>
   </template>

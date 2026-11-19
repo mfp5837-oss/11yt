@@ -12,10 +12,15 @@
            content="ie=edge">
      <title>My Page</title>
      <link rel="stylesheet" href="CSS/style.css">
-     <script type="module" src="/js/is-land.js"></script>
+     <script type="module" src="./js/is-land.js"></script>
 </head>
 <body>
-
+<nav class="site-nav">
+  <a href="/">Home</a>
+  <a href="./guide.html">My Tech Guide</a>
+  <a href="./gallery.html">Gallery</a>
+  <a href="/contact/">Contact</a>
+</nav>
     <p>Please press a button to choose a topical set of images.</p>
 
 
@@ -24,11 +29,11 @@
     <div class="filters">
       <button @click="active = 'all'" :class="{ on: active === 'all' }" :aria-pressed="active === 'all'">All</button>
       
-      <button @click="active = 'photos'" :class="{ on: active === 'photos' }" :aria-pressed="active === 'photos'">photos</button>
+      <button @click="active = 'photos'" :class="{ on: active === 'photos' }" :aria-pressed="active === 'photos'">photos (2)</button>
       
-      <button @click="active = 'sketches'" :class="{ on: active === 'sketches' }" :aria-pressed="active === 'sketches'">sketches</button>
+      <button @click="active = 'sketches'" :class="{ on: active === 'sketches' }" :aria-pressed="active === 'sketches'">sketches (2)</button>
       
-      <button @click="active = 'type'" :class="{ on: active === 'type' }" :aria-pressed="active === 'type'">type</button>
+      <button @click="active = 'type'" :class="{ on: active === 'type' }" :aria-pressed="active === 'type'">type (2)</button>
       
     </div>
     <p aria-live="polite">Showing: <span v-text="active"></span></p>
@@ -88,7 +93,7 @@
 
   <template data-island>
     <script type="module">
-      import { createApp } from '/js/petite-vue.es.js'
+      import { createApp } from "./js/petite-vue.es.js"
       createApp().mount('#gallery')
     </script>
   </template>

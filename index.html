@@ -12,17 +12,16 @@
            content="ie=edge">
      <title>My Page</title>
      <link rel="stylesheet" href="CSS/style.css">
-     <script type="module" src="/js/is-land.js"></script>
+     <script type="module" src="./js/is-land.js"></script>
 </head>
 <body>
-
-    <nav class="site-nav">
+<nav class="site-nav">
   <a href="/">Home</a>
-  <a href="./guides.html">My Tech Guide</a>
-  <a href="./gallery/index.html">Gallery</a>
+  <a href="./guide.html">My Tech Guide</a>
+  <a href="./gallery.html">Gallery</a>
   <a href="/contact/">Contact</a>
 </nav>
-<h1>Hello!</h1>
+    <h1>Hello!</h1>
 <h2>Hey guys!</h2>
 <p>Welcome to my site.<br>
 This page was made with <strong>Eleventy</strong> and written in Markdown.</p>
@@ -35,7 +34,7 @@ This page was made with <strong>Eleventy</strong> and written in Markdown.</p>
   </div>
   <template data-island>
     <script type="module">
-      import { createApp } from '../js/petite-vue.es.js'
+      import { createApp } from './js/petite-vue.es.js'
       createApp().mount('#counter')
     </script>
   </template>
@@ -44,7 +43,7 @@ This page was made with <strong>Eleventy</strong> and written in Markdown.</p>
 <p><time class="fmt-date" datetime="2026-11-19T13:46:43-05:00">2026-11-19T13:46:43-05:00</time></p>
 <p>·
 <strong>Site last built:</strong>
-<time class="fmt-date" datetime="2026-11-19T18:54:34.142Z">2026-11-19T18:54:34.142Z</time></p>
+<time class="fmt-date" datetime="2026-11-19T20:15:58.438Z">2026-11-19T20:15:58.438Z</time></p>
 <is-land on:visible>
   <template data-island>
     <script type="module">
